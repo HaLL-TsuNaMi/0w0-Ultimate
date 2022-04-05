@@ -7,12 +7,12 @@ module.exports = {
     async execute(client, message) {
         const queue = player.getQueue(message.guild.id);
 
-        if (!queue || !queue.playing) return message.channel.send(`No music currently playing ${message.author}... try again ? ❌`);
+        if (!queue || !queue.playing) return message.channel.send(`No music cuwwently pwaying ${message.author}... twy again ÚwÙ?`);
 
         const progress = queue.createProgressBar();
         const timestamp = queue.getPlayerTimestamp();
 
-        if (timestamp.progress == 'Infinity') return message.channel.send(`Playing a live, no data to display 🎧`);
+        if (timestamp.progress == 'Infinity') return message.channel.send(`Pwaying a wive, no data to display UwU`);
 
         message.channel.send(`${progress} (**${timestamp.progress}**%)`);
     },

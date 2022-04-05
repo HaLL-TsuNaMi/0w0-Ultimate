@@ -1,10 +1,9 @@
 {
-  "name": "music-bot",
+  "name": "0w0-ultimate",
   "main": "main.js",
-  "author": "ZerioDev",
-  "version": "6.0.0",
-  "repository": "https://github.com/ZerioDev/Music-bot.git",
-  "description": "A complete code to download for a cool Discord music bot.",
+  "author": "HallTsunami",
+  "version": "5.0.0",
+  "description": "It be the new and improved 0w0, better than ever and playing music for everyone in the server just like his dreams intended",
   "scripts": {
     "start": "node main.js"
   },

@@ -9,7 +9,7 @@ module.exports = {
     execute(client, message) {
         const queue = player.getQueue(message.guild.id);
 
-        if (!queue || !queue.playing) return message.channel.send(`No music currently playing ${message.author}... try again ? ❌`);
+        if (!queue || !queue.playing) return message.channel.send(`No music cuwwently pwaying ${message.author}... twy again ÚwÙ?`);
 
         const track = queue.current;
 
@@ -24,10 +24,10 @@ module.exports = {
         const timestamp = queue.getPlayerTimestamp();
         const trackDuration = timestamp.progress == 'Infinity' ? 'infinity (live)' : track.duration;
 
-        embed.setDescription(`Volume **${queue.volume}**%\nDuration **${trackDuration}**\nLoop mode **${methods[queue.repeatMode]}**\nRequested by ${track.requestedBy}`);
+        embed.setDescription(`Vowume **${queue.volume}**%\nDuration **${trackDuration}**\nWoop mode **${methods[queue.repeatMode]}**\nWequested by ${track.requestedBy}`);
 
         embed.setTimestamp();
-        embed.setFooter('Music comes first - Made with heart by Zerio ❤️', message.author.avatarURL({ dynamic: true }));
+        embed.setFooter('DJ TIME >:3', message.author.avatarURL({ dynamic: true }));
 
         const saveButton = new MessageButton();
 
