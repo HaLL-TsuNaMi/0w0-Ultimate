@@ -1,4 +1,5 @@
 const ms = require('ms');
+client.config = require('../../config');
 
 module.exports = {
     name: 'ping',
@@ -6,20 +7,6 @@ module.exports = {
     utilisation: '{prefix}ping',
 
     execute(client, message) {
-		switch(msg.content) {
-			// Basic 0w0 commands
-			case config.prefix + "ping":
-				msg.reply({embed: {
-					color: 0x7FADF8,
-					author: {
-						name: bot.user.username,
-						icon_url: bot.user.displayAvatarURL
-					},
-						title: "pong UwU",
-						timestamp: new Date()
-				}});
-				console.log("pong UwU");
-				break;
-			}
+		message.channel.send(`Wast pong cawcuwated ${ms(Date.now() - client.ws.shards.first().lastPingTimestamp, { long: true })} ago **${client.ws.ping}ms** UwU`);
     },
 };
