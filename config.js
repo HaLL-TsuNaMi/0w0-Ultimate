@@ -1,6 +1,6 @@
 module.exports = {
     app: {
-        px: '*',
+        px: '^',
         playing: 'Epic Games'
     },
 
